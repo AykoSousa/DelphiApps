@@ -22,6 +22,7 @@ object DM: TDM
     object tbContatosid: TFDAutoIncField
       FieldName = 'id'
       Origin = 'id'
+      ProviderFlags = [pfInWhere, pfInKey]
     end
     object tbContatosnome: TStringField
       FieldName = 'nome'
@@ -36,19 +37,19 @@ object DM: TDM
       Size = 16
     end
     object tbContatosbloqueado: TBooleanField
+      AutoGenerateValue = arDefault
       FieldName = 'bloqueado'
       Origin = 'bloqueado'
-      Required = True
     end
     object tbContatosdata: TDateTimeField
+      AutoGenerateValue = arDefault
       FieldName = 'data'
       Origin = 'data'
-      Required = True
     end
     object tbContatosobservacoes: TMemoField
+      AutoGenerateValue = arDefault
       FieldName = 'observacoes'
       Origin = 'observacoes'
-      Required = True
       BlobType = ftMemo
     end
   end

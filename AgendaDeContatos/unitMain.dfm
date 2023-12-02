@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 'Agenda de Contatos'
-  ClientHeight = 452
+  ClientHeight = 465
   ClientWidth = 780
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -36,7 +36,7 @@ object Form1: TForm1
     Left = 0
     Top = 65
     Width = 780
-    Height = 387
+    Height = 400
     Align = alClient
     TabOrder = 1
     ExplicitTop = 87
@@ -108,6 +108,19 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
     end
+    object lblBuscaContatos: TLabel
+      Left = 448
+      Top = 20
+      Width = 88
+      Height = 17
+      Caption = 'Buscar Contato'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+    end
     object edtNomeContato: TDBEdit
       Left = 16
       Top = 72
@@ -174,6 +187,47 @@ object Form1: TForm1
       Height = 27
       DataSource = DM.dsContatos
       TabOrder = 4
+    end
+    object grdContatosCadastrados: TDBGrid
+      Left = 448
+      Top = 72
+      Width = 320
+      Height = 305
+      DataSource = DM.dsContatos
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      ReadOnly = True
+      TabOrder = 5
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -16
+      TitleFont.Name = 'Segoe UI'
+      TitleFont.Style = []
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'nome'
+          Title.Caption = 'Contatos Cadastrados'
+          Visible = True
+        end>
+    end
+    object txtBusca: TEdit
+      Left = 448
+      Top = 43
+      Width = 320
+      Height = 23
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 6
+      OnChange = txtBuscaChange
     end
   end
 end

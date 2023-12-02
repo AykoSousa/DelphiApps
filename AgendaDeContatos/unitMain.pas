@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.DBCtrls,
-  Vcl.Mask;
+  Vcl.Mask, Data.DB, Vcl.Grids, Vcl.DBGrids;
 
 type
   TForm1 = class(TForm)
@@ -22,6 +22,10 @@ type
     lblDataHora: TLabel;
     txtDataHora: TDBText;
     nvgControles: TDBNavigator;
+    grdContatosCadastrados: TDBGrid;
+    txtBusca: TEdit;
+    lblBuscaContatos: TLabel;
+    procedure txtBuscaChange(Sender: TObject);
   private
     { Private declarations }
   public
@@ -36,5 +40,10 @@ implementation
 {$R *.dfm}
 
 uses unitDM;
+
+procedure TForm1.txtBuscaChange(Sender: TObject);
+begin
+  DM.tbContatos.Locate('nome', txtBusca.Text, [loPartialKey]);
+end;
 
 end.
