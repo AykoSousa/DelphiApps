@@ -110,6 +110,11 @@
             <Form>fmrAgendamentos</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="unitDM.pas">
+            <Form>DM</Form>
+            <FormType>dfm</FormType>
+            <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
