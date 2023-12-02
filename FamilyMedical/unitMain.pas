@@ -5,10 +5,10 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls,
-  Vcl.Imaging.pngimage, Vcl.StdCtrls, Vcl.Buttons;
+  Vcl.Imaging.pngimage, Vcl.StdCtrls, Vcl.Buttons, unitCadastroPacientes, unitAgendamentos;
 
 type
-  TfrmmAIN = class(TForm)
+  TfrmMain = class(TForm)
     pnlMain: TPanel;
     menuPrincipal: TMainMenu;
     S1: TMenuItem;
@@ -20,6 +20,9 @@ type
     btnAgendamentos: TBitBtn;
     btnPacientes: TBitBtn;
     imgLogo: TImage;
+    procedure Sair1Click(Sender: TObject);
+    procedure Pacientes1Click(Sender: TObject);
+    procedure Agendamentos1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -27,10 +30,25 @@ type
   end;
 
 var
-  frmmAIN: TfrmmAIN;
+  frmMain: TfrmMain;
 
 implementation
 
 {$R *.dfm}
+
+procedure TfrmMain.Agendamentos1Click(Sender: TObject);
+begin
+  fmrAgendamentos.Show;
+end;
+
+procedure TfrmMain.Pacientes1Click(Sender: TObject);
+begin
+ fmrCadastroPacientes.Show;
+end;
+
+procedure TfrmMain.Sair1Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
 
 end.

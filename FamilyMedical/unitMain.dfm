@@ -1,4 +1,4 @@
-object frmmAIN: TfrmmAIN
+object frmMain: TfrmMain
   Left = 0
   Top = 0
   Caption = 'Sistema Family Medical'
@@ -2870,21 +2870,24 @@ object frmmAIN: TfrmmAIN
     end
   end
   object menuPrincipal: TMainMenu
-    Left = 8
-    Top = 408
+    Left = 240
+    Top = 32
     object S1: TMenuItem
       Caption = 'Sistema'
       object Sair1: TMenuItem
         Caption = 'Sair'
+        OnClick = Sair1Click
       end
     end
     object Cadastros1: TMenuItem
       Caption = 'Cadastros'
       object Pacientes1: TMenuItem
         Caption = 'Pacientes'
+        OnClick = Pacientes1Click
       end
       object Agendamentos1: TMenuItem
         Caption = 'Agendamentos'
+        OnClick = Agendamentos1Click
       end
     end
   end

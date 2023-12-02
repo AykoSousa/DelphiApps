@@ -99,7 +99,15 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="unitMain.pas">
-            <Form>frmmAIN</Form>
+            <Form>frmMain</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="unitCadastroPacientes.pas">
+            <Form>fmrCadastroPacientes</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="unitAgendamentos.pas">
+            <Form>fmrAgendamentos</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
