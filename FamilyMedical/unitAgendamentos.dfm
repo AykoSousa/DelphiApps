@@ -1,6 +1,8 @@
 object fmrAgendamentos: TfmrAgendamentos
   Left = 0
   Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
   Caption = 'Cadastro de Agendamentos'
   ClientHeight = 442
   ClientWidth = 628
@@ -10,5 +12,6 @@ object fmrAgendamentos: TfmrAgendamentos
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  Position = poScreenCenter
   TextHeight = 15
 end

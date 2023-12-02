@@ -2261,11 +2261,10 @@ object frmMain: TfrmMain
       Align = alTop
       TabOrder = 0
       object btnAgendamentos: TBitBtn
-        Left = 97
+        Left = 103
         Top = 1
-        Width = 96
+        Width = 98
         Height = 94
-        Align = alLeft
         Caption = 'Agendamentos'
         Glyph.Data = {
           42240000424D4224000000000000420000002800000030000000300000000100
@@ -2561,7 +2560,7 @@ object frmMain: TfrmMain
           47004C704700}
         Layout = blGlyphTop
         TabOrder = 0
-        ExplicitLeft = 103
+        OnClick = btnAgendamentosClick
       end
       object btnPacientes: TBitBtn
         Left = 1
@@ -2864,18 +2863,20 @@ object frmMain: TfrmMain
           47004C704700}
         Layout = blGlyphTop
         TabOrder = 1
+        OnClick = btnPacientesClick
         ExplicitLeft = 9
         ExplicitTop = 2
       end
     end
   end
   object menuPrincipal: TMainMenu
-    Left = 240
+    Left = 264
     Top = 32
     object S1: TMenuItem
       Caption = 'Sistema'
       object Sair1: TMenuItem
         Caption = 'Sair'
+        ShortCut = 16463
         OnClick = Sair1Click
       end
     end
