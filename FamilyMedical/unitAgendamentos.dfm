@@ -185,12 +185,14 @@ object fmrAgendamentos: TfmrAgendamentos
           Expanded = False
           FieldName = 'data'
           Title.Caption = 'Data'
+          Width = 67
           Visible = True
         end
         item
           Expanded = False
           FieldName = 'tipo_especialidade'
           Title.Caption = 'Especialidade'
+          Width = 171
           Visible = True
         end>
     end

@@ -22,9 +22,9 @@ type
     tblPacientenumero_celular: TStringField;
     tblPacientedata_cadastro: TDateField;
     tblPacientecpf_paciente: TStringField;
-    tblAgendamentodata: TDateField;
     tblAgendamentoid: TFDAutoIncField;
     tblAgendamentoid_paciente: TIntegerField;
+    tblAgendamentodata: TDateField;
     tblAgendamentohora: TStringField;
     tblAgendamentotipo_especialidade: TStringField;
     tblAgendamentomedico: TStringField;

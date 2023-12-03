@@ -66,18 +66,18 @@ object DM: TDM
       Origin = 'id_paciente'
       Required = True
     end
-    object tblAgendamentohora: TStringField
-      FieldName = 'hora'
-      Origin = 'hora'
-      Required = True
-      EditMask = '##/##/####;1;_'
-      Size = 8
-    end
     object tblAgendamentodata: TDateField
       FieldName = 'data'
       Origin = 'data'
       Required = True
+      EditMask = '##/##/####;1;_'
+    end
+    object tblAgendamentohora: TStringField
+      FieldName = 'hora'
+      Origin = 'hora'
+      Required = True
       EditMask = '##:##;1;_'
+      Size = 8
     end
     object tblAgendamentotipo_especialidade: TStringField
       FieldName = 'tipo_especialidade'
