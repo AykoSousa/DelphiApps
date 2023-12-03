@@ -25,7 +25,7 @@ type
     lblNomeMedicoAgendamento: TLabel;
     edtNomeMedicoAgendamento: TDBEdit;
     cmbEspecialidade: TDBComboBox;
-    DBGrid1: TDBGrid;
+    grdAgendamentos: TDBGrid;
   private
     { Private declarations }
   public

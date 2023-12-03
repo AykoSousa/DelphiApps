@@ -156,17 +156,43 @@ object fmrAgendamentos: TfmrAgendamentos
         'Pediatria')
       TabOrder = 5
     end
-    object DBGrid1: TDBGrid
+    object grdAgendamentos: TDBGrid
       Left = 408
       Top = 48
       Width = 320
       Height = 265
+      DataSource = DM.dsAgendamento
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
       TabOrder = 6
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -12
       TitleFont.Name = 'Segoe UI'
-      TitleFont.Style = []
+      TitleFont.Style = [fsBold]
+      Columns = <
+        item
+          Expanded = False
+          FieldName = 'hora'
+          Title.Caption = 'Hora'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'data'
+          Title.Caption = 'Data'
+          Visible = True
+        end
+        item
+          Expanded = False
+          FieldName = 'tipo_especialidade'
+          Title.Caption = 'Especialidade'
+          Visible = True
+        end>
     end
   end
 end
