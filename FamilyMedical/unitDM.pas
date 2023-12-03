@@ -22,6 +22,13 @@ type
     tblPacientenumero_celular: TStringField;
     tblPacientedata_cadastro: TDateField;
     tblPacientecpf_paciente: TStringField;
+    tblAgendamentodata: TDateField;
+    tblAgendamentoid: TFDAutoIncField;
+    tblAgendamentoid_paciente: TIntegerField;
+    tblAgendamentohora: TStringField;
+    tblAgendamentotipo_especialidade: TStringField;
+    tblAgendamentomedico: TStringField;
+    procedure tblPacienteAfterInsert(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -36,5 +43,10 @@ implementation
 {%CLASSGROUP 'Vcl.Controls.TControl'}
 
 {$R *.dfm}
+
+procedure TDM.tblPacienteAfterInsert(DataSet: TDataSet);
+begin
+  tblPacientedata_cadastro.Value := Date();
+end;
 
 end.

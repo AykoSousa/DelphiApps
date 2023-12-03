@@ -21,7 +21,7 @@ object fmrCadastroPacientes: TfmrCadastroPacientes
     Height = 97
     Align = alTop
     TabOrder = 0
-    ExplicitLeft = -8
+    ExplicitWidth = 737
     object lblTitulo: TLabel
       Left = 24
       Top = 27
@@ -35,7 +35,7 @@ object fmrCadastroPacientes: TfmrCadastroPacientes
       Font.Style = [fsBold]
       ParentFont = False
     end
-    object DBNavigator1: TDBNavigator
+    object navCadastroPacientes: TDBNavigator
       Left = 408
       Top = 36
       Width = 320
@@ -52,7 +52,8 @@ object fmrCadastroPacientes: TfmrCadastroPacientes
     Align = alClient
     ParentBackground = False
     TabOrder = 1
-    ExplicitWidth = 740
+    ExplicitWidth = 737
+    ExplicitHeight = 344
     object lblIdPaciente: TLabel
       Left = 24
       Top = 27
@@ -111,7 +112,7 @@ object fmrCadastroPacientes: TfmrCadastroPacientes
       Height = 23
       DataField = 'nome'
       DataSource = DM.dsPaciente
-      TabOrder = 1
+      TabOrder = 2
     end
     object edtCPFPaciente: TDBEdit
       Left = 128
@@ -121,7 +122,7 @@ object fmrCadastroPacientes: TfmrCadastroPacientes
       DataField = 'cpf_paciente'
       DataSource = DM.dsPaciente
       MaxLength = 14
-      TabOrder = 2
+      TabOrder = 1
     end
     object edtContatoPaciente: TDBEdit
       Left = 24
@@ -140,6 +141,7 @@ object fmrCadastroPacientes: TfmrCadastroPacientes
       Height = 23
       DataField = 'data_cadastro'
       DataSource = DM.dsPaciente
+      ReadOnly = True
       TabOrder = 4
     end
     object DBGrid1: TDBGrid
@@ -158,11 +160,6 @@ object fmrCadastroPacientes: TfmrCadastroPacientes
         item
           Expanded = False
           FieldName = 'nome'
-          Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWindowText
-          Font.Height = -12
-          Font.Name = 'Fira Code'
-          Font.Style = []
           Title.Caption = 'Pacientes Cadastrados'
           Title.Font.Charset = DEFAULT_CHARSET
           Title.Font.Color = clWindowText

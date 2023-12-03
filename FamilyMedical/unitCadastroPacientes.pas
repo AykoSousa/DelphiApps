@@ -23,7 +23,7 @@ type
     lblContatoPaciente: TLabel;
     lblDataCadastoPaciente: TLabel;
     DBGrid1: TDBGrid;
-    DBNavigator1: TDBNavigator;
+    navCadastroPacientes: TDBNavigator;
     Label1: TLabel;
     edtBuscarPaciente: TEdit;
     procedure edtBuscarPacienteChange(Sender: TObject);
