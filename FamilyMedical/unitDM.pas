@@ -22,14 +22,15 @@ type
     tblPacientenumero_celular: TStringField;
     tblPacientedata_cadastro: TDateField;
     tblPacientecpf_paciente: TStringField;
-    tblAgendamentoid: TFDAutoIncField;
-    tblAgendamentoid_paciente: TIntegerField;
-    tblAgendamentodata: TDateField;
-    tblAgendamentohora: TStringField;
     tblMedicos: TFDTable;
     dsMedicos: TDataSource;
     tblEspecialidades: TFDTable;
     dsEspecialidades: TDataSource;
+    tblAgendamentoid: TFDAutoIncField;
+    tblAgendamentoid_paciente: TIntegerField;
+    tblAgendamentodata: TDateField;
+    tblAgendamentohora: TStringField;
+    tblAgendamentoid_medico: TIntegerField;
     procedure tblPacienteAfterInsert(DataSet: TDataSet);
   private
     { Private declarations }

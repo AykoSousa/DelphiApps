@@ -58,19 +58,28 @@ object DM: TDM
     Top = 232
     object tblAgendamentoid: TFDAutoIncField
       FieldName = 'id'
+      Origin = 'id'
     end
     object tblAgendamentoid_paciente: TIntegerField
       FieldName = 'id_paciente'
+      Origin = 'id_paciente'
       Required = True
     end
     object tblAgendamentodata: TDateField
       FieldName = 'data'
+      Origin = 'data'
       Required = True
     end
     object tblAgendamentohora: TStringField
       FieldName = 'hora'
+      Origin = 'hora'
       Required = True
       Size = 8
+    end
+    object tblAgendamentoid_medico: TIntegerField
+      FieldName = 'id_medico'
+      Origin = 'id_medico'
+      Required = True
     end
   end
   object dsPaciente: TDataSource

@@ -6,7 +6,8 @@ uses
   unitMain in 'unitMain.pas' {frmMain},
   unitCadastroPacientes in 'unitCadastroPacientes.pas' {fmrCadastroPacientes},
   unitDM in 'unitDM.pas' {DM: TDataModule},
-  unitCadastroMedicos in 'unitCadastroMedicos.pas' {fmrCadastroMedicos};
+  unitCadastroMedicos in 'unitCadastroMedicos.pas' {fmrCadastroMedicos},
+  uniCadastroEspecialidade in 'uniCadastroEspecialidade.pas' {Form1};
 
 {$R *.res}
 
@@ -24,5 +25,6 @@ begin
   Application.CreateForm(TfmrCadastroPacientes, fmrCadastroPacientes);
   Application.CreateForm(TDM, DM);
   Application.CreateForm(TfmrCadastroMedicos, fmrCadastroMedicos);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

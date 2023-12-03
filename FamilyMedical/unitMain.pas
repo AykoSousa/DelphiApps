@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.ExtCtrls,
-  Vcl.Imaging.pngimage, Vcl.StdCtrls, Vcl.Buttons, unitCadastroPacientes, unitAgendamentos;
+  Vcl.Imaging.pngimage, Vcl.StdCtrls, Vcl.Buttons, unitCadastroPacientes, unitAgendamentos, unitCadastroMedicos;
 
 type
   TfrmMain = class(TForm)

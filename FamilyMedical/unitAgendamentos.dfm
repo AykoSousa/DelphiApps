@@ -139,8 +139,8 @@ object fmrAgendamentos: TfmrAgendamentos
       Top = 248
       Width = 204
       Height = 23
-      DataField = 'nome'
-      DataSource = DM.dsMedicos
+      DataField = 'id_medico'
+      DataSource = DM.dsAgendamento
       TabOrder = 4
     end
     object cmbEspecialidade: TDBComboBox
