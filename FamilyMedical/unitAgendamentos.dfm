@@ -21,6 +21,7 @@ object fmrAgendamentos: TfmrAgendamentos
     Height = 97
     Align = alTop
     TabOrder = 0
+    ExplicitWidth = 753
     object lblTituloAgendamentos: TLabel
       Left = 24
       Top = 28
@@ -50,10 +51,8 @@ object fmrAgendamentos: TfmrAgendamentos
     Height = 345
     Align = alClient
     TabOrder = 1
-    ExplicitLeft = 296
-    ExplicitTop = 224
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitWidth = 753
+    ExplicitHeight = 344
     object lblIdAgendamentos: TLabel
       Left = 24
       Top = 27
@@ -140,8 +139,8 @@ object fmrAgendamentos: TfmrAgendamentos
       Top = 248
       Width = 204
       Height = 23
-      DataField = 'medico'
-      DataSource = DM.dsAgendamento
+      DataField = 'nome'
+      DataSource = DM.dsMedicos
       TabOrder = 4
     end
     object cmbEspecialidade: TDBComboBox
@@ -149,8 +148,8 @@ object fmrAgendamentos: TfmrAgendamentos
       Top = 186
       Width = 204
       Height = 23
-      DataField = 'tipo_especialidade'
-      DataSource = DM.dsAgendamento
+      DataField = 'especialidade'
+      DataSource = DM.dsEspecialidades
       Items.Strings = (
         'Nutricionista'
         'Pediatria')

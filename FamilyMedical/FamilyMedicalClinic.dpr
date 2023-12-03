@@ -2,10 +2,11 @@ program FamilyMedicalClinic;
 
 uses
   Vcl.Forms,
+  unitAgendamentos in 'unitAgendamentos.pas' {fmrAgendamentos},
   unitMain in 'unitMain.pas' {frmMain},
   unitCadastroPacientes in 'unitCadastroPacientes.pas' {fmrCadastroPacientes},
-  unitAgendamentos in 'unitAgendamentos.pas' {fmrAgendamentos},
-  unitDM in 'unitDM.pas' {DM: TDataModule};
+  unitDM in 'unitDM.pas' {DM: TDataModule},
+  unitCadastroMedicos in 'unitCadastroMedicos.pas' {fmrCadastroMedicos};
 
 {$R *.res}
 
@@ -16,5 +17,12 @@ begin
   Application.CreateForm(TfmrCadastroPacientes, fmrCadastroPacientes);
   Application.CreateForm(TfmrAgendamentos, fmrAgendamentos);
   Application.CreateForm(TDM, DM);
+  Application.CreateForm(TfmrAgendamentos, fmrAgendamentos);
+  Application.CreateForm(TfmrCadastroPacientes, fmrCadastroPacientes);
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TfrmMain, frmMain);
+  Application.CreateForm(TfmrCadastroPacientes, fmrCadastroPacientes);
+  Application.CreateForm(TDM, DM);
+  Application.CreateForm(TfmrCadastroMedicos, fmrCadastroMedicos);
   Application.Run;
 end.

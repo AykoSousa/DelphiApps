@@ -34,7 +34,6 @@ object DM: TDM
       FieldName = 'numero_celular'
       Origin = 'numero_celular'
       Required = True
-      EditMask = '(##) #####-####;1;_'
       Size = 16
     end
     object tblPacientedata_cadastro: TDateField
@@ -46,11 +45,11 @@ object DM: TDM
       FieldName = 'cpf_paciente'
       Origin = 'cpf_paciente'
       Required = True
-      EditMask = '###.###.###-##;1;_'
       Size = 14
     end
   end
   object tblAgendamento: TFDTable
+    Active = True
     IndexFieldNames = 'id'
     Connection = Conexao
     ResourceOptions.AssignedValues = [rvEscapeExpand]
@@ -59,37 +58,19 @@ object DM: TDM
     Top = 232
     object tblAgendamentoid: TFDAutoIncField
       FieldName = 'id'
-      Origin = 'id'
     end
     object tblAgendamentoid_paciente: TIntegerField
       FieldName = 'id_paciente'
-      Origin = 'id_paciente'
       Required = True
     end
     object tblAgendamentodata: TDateField
       FieldName = 'data'
-      Origin = 'data'
       Required = True
-      EditMask = '##/##/####;1;_'
     end
     object tblAgendamentohora: TStringField
       FieldName = 'hora'
-      Origin = 'hora'
       Required = True
-      EditMask = '##:##;1;_'
       Size = 8
-    end
-    object tblAgendamentotipo_especialidade: TStringField
-      FieldName = 'tipo_especialidade'
-      Origin = 'tipo_especialidade'
-      Required = True
-      Size = 25
-    end
-    object tblAgendamentomedico: TStringField
-      FieldName = 'medico'
-      Origin = 'medico'
-      Required = True
-      Size = 50
     end
   end
   object dsPaciente: TDataSource
@@ -100,6 +81,34 @@ object DM: TDM
   object dsAgendamento: TDataSource
     DataSet = tblAgendamento
     Left = 168
-    Top = 240
+    Top = 232
+  end
+  object tblMedicos: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = Conexao
+    ResourceOptions.AssignedValues = [rvEscapeExpand]
+    TableName = 'clinica.medicos'
+    Left = 64
+    Top = 328
+  end
+  object dsMedicos: TDataSource
+    DataSet = tblMedicos
+    Left = 168
+    Top = 336
+  end
+  object tblEspecialidades: TFDTable
+    Active = True
+    IndexFieldNames = 'id'
+    Connection = Conexao
+    ResourceOptions.AssignedValues = [rvEscapeExpand]
+    TableName = 'clinica.especialidade_atendimento'
+    Left = 64
+    Top = 416
+  end
+  object dsEspecialidades: TDataSource
+    DataSet = tblEspecialidades
+    Left = 160
+    Top = 424
   end
 end

@@ -20,10 +20,8 @@ object frmMain: TfrmMain
     Height = 455
     Align = alClient
     TabOrder = 0
-    ExplicitLeft = 224
-    ExplicitTop = 64
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitWidth = 776
+    ExplicitHeight = 454
     object imgLogo: TImage
       Left = 1
       Top = 97
@@ -2260,6 +2258,7 @@ object frmMain: TfrmMain
       Height = 96
       Align = alTop
       TabOrder = 0
+      ExplicitWidth = 774
       object btnAgendamentos: TBitBtn
         Left = 103
         Top = 1
@@ -2864,8 +2863,6 @@ object frmMain: TfrmMain
         Layout = blGlyphTop
         TabOrder = 1
         OnClick = btnPacientesClick
-        ExplicitLeft = 9
-        ExplicitTop = 2
       end
     end
   end
@@ -2889,6 +2886,10 @@ object frmMain: TfrmMain
       object Agendamentos1: TMenuItem
         Caption = 'Agendamentos'
         OnClick = Agendamentos1Click
+      end
+      object Mdicos1: TMenuItem
+        Caption = 'M'#233'dicos'
+        OnClick = Mdicos1Click
       end
     end
   end

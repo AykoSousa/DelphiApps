@@ -26,8 +26,10 @@ type
     tblAgendamentoid_paciente: TIntegerField;
     tblAgendamentodata: TDateField;
     tblAgendamentohora: TStringField;
-    tblAgendamentotipo_especialidade: TStringField;
-    tblAgendamentomedico: TStringField;
+    tblMedicos: TFDTable;
+    dsMedicos: TDataSource;
+    tblEspecialidades: TFDTable;
+    dsEspecialidades: TDataSource;
     procedure tblPacienteAfterInsert(DataSet: TDataSet);
   private
     { Private declarations }

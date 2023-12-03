@@ -20,11 +20,13 @@ type
     btnAgendamentos: TBitBtn;
     btnPacientes: TBitBtn;
     imgLogo: TImage;
+    Mdicos1: TMenuItem;
     procedure Sair1Click(Sender: TObject);
     procedure Pacientes1Click(Sender: TObject);
     procedure Agendamentos1Click(Sender: TObject);
     procedure btnPacientesClick(Sender: TObject);
     procedure btnAgendamentosClick(Sender: TObject);
+    procedure Mdicos1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -51,6 +53,11 @@ end;
 procedure TfrmMain.btnPacientesClick(Sender: TObject);
 begin
   fmrCadastroPacientes.Show;
+end;
+
+procedure TfrmMain.Mdicos1Click(Sender: TObject);
+begin
+  fmrCadastroMedicos.Show;
 end;
 
 procedure TfrmMain.Pacientes1Click(Sender: TObject);

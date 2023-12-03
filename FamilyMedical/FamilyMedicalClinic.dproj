@@ -98,6 +98,10 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
+        <DCCReference Include="unitAgendamentos.pas">
+            <Form>fmrAgendamentos</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <DCCReference Include="unitMain.pas">
             <Form>frmMain</Form>
             <FormType>dfm</FormType>
@@ -106,14 +110,14 @@
             <Form>fmrCadastroPacientes</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="unitAgendamentos.pas">
-            <Form>fmrAgendamentos</Form>
-            <FormType>dfm</FormType>
-        </DCCReference>
         <DCCReference Include="unitDM.pas">
             <Form>DM</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
+        </DCCReference>
+        <DCCReference Include="unitCadastroMedicos.pas">
+            <Form>fmrCadastroMedicos</Form>
+            <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
