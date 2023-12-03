@@ -143,18 +143,6 @@ object fmrAgendamentos: TfmrAgendamentos
       DataSource = DM.dsAgendamento
       TabOrder = 4
     end
-    object cmbEspecialidade: TDBComboBox
-      Left = 24
-      Top = 186
-      Width = 204
-      Height = 23
-      DataField = 'especialidade'
-      DataSource = DM.dsEspecialidades
-      Items.Strings = (
-        'Nutricionista'
-        'Pediatria')
-      TabOrder = 5
-    end
     object grdAgendamentos: TDBGrid
       Left = 408
       Top = 48
@@ -167,7 +155,7 @@ object fmrAgendamentos: TfmrAgendamentos
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
-      TabOrder = 6
+      TabOrder = 5
       TitleFont.Charset = DEFAULT_CHARSET
       TitleFont.Color = clWindowText
       TitleFont.Height = -12
@@ -194,6 +182,18 @@ object fmrAgendamentos: TfmrAgendamentos
           Width = 171
           Visible = True
         end>
+    end
+    object cmbEspecialidade: TDBLookupComboBox
+      Left = 24
+      Top = 186
+      Width = 204
+      Height = 23
+      DataField = 'id_medico'
+      DataSource = DM.dsAgendamento
+      KeyField = 'id'
+      ListField = 'especialidade'
+      ListSource = DM.dsEspecialidades
+      TabOrder = 6
     end
   end
 end

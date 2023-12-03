@@ -120,7 +120,7 @@
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="uniCadastroEspecialidade.pas">
-            <Form>Form1</Form>
+            <Form>fmrEspecialidades</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">

@@ -8,7 +8,7 @@ uses
   Vcl.Mask;
 
 type
-  TForm1 = class(TForm)
+  TfmrEspecialidades = class(TForm)
     pnlHeaderEspecialidade: TPanel;
     lblTituloEspecialidades: TLabel;
     navEspecialidades: TDBNavigator;
@@ -26,7 +26,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  fmrEspecialidades: TfmrEspecialidades;
 
 implementation
 

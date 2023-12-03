@@ -2891,6 +2891,10 @@ object frmMain: TfrmMain
         Caption = 'M'#233'dicos'
         OnClick = Mdicos1Click
       end
+      object Especialidade1: TMenuItem
+        Caption = 'Especialidade'
+        OnClick = Especialidade1Click
+      end
     end
   end
 end

@@ -1,7 +1,7 @@
-object Form1: TForm1
+object fmrEspecialidades: TfmrEspecialidades
   Left = 0
   Top = 0
-  Caption = 'fmrEspecialidades'
+  Caption = 'Cadastro Especialidade'
   ClientHeight = 442
   ClientWidth = 741
   Color = clBtnFace
@@ -88,7 +88,7 @@ object Form1: TForm1
       Top = 128
       Width = 249
       Height = 23
-      DataField = 'id'
+      DataField = 'especialidade'
       DataSource = DM.dsEspecialidades
       TabOrder = 1
     end
