@@ -19,9 +19,9 @@ Este é um projeto de agenda de contatos desenvolvido em Delphi, uma linguagem d
 
 ## Instruções de Instalação
 1. Clone o repositório para o seu ambiente local.
-  ```bash
-  git clone https://github.com/seu-usuario/agenda-delphi.git
-  ```
+```bash
+git clone https://github.com/seu-usuario/agenda-delphi.git
+```
 2. Abra o projeto no Delphi RAD Studio.
 3. Compile o projeto para gerar o executável.
 4. Execute o aplicativo resultante para começar a usar a agenda de contatos.
