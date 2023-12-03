@@ -53,15 +53,15 @@ object fmrCadastroMedicos: TfmrCadastroMedicos
     ExplicitWidth = 185
     ExplicitHeight = 41
     object lblNomeMedico: TLabel
-      Left = 190
-      Top = 107
+      Left = 24
+      Top = 99
       Width = 89
       Height = 15
       Caption = 'Nome Completo'
     end
     object lblCRMMedico: TLabel
       Left = 24
-      Top = 107
+      Top = 165
       Width = 26
       Height = 15
       Caption = 'CRM'
@@ -74,8 +74,8 @@ object fmrCadastroMedicos: TfmrCadastroMedicos
       Caption = 'ID'
     end
     object edtNomeMedico: TDBEdit
-      Left = 190
-      Top = 128
+      Left = 24
+      Top = 120
       Width = 209
       Height = 23
       DataField = 'nome'
@@ -84,7 +84,7 @@ object fmrCadastroMedicos: TfmrCadastroMedicos
     end
     object DBEdit2: TDBEdit
       Left = 24
-      Top = 128
+      Top = 186
       Width = 121
       Height = 23
       DataField = 'crm'
@@ -94,7 +94,7 @@ object fmrCadastroMedicos: TfmrCadastroMedicos
     object edtIdMedico: TDBEdit
       Left = 24
       Top = 48
-      Width = 121
+      Width = 49
       Height = 23
       DataField = 'id'
       DataSource = DM.dsMedicos
