@@ -23,9 +23,9 @@ type
     edtHoraAgendamento: TDBEdit;
     lblEspecialidade: TLabel;
     lblNomeMedicoAgendamento: TLabel;
-    edtNomeMedicoAgendamento: TDBEdit;
     grdAgendamentos: TDBGrid;
     cmbEspecialidade: TDBLookupComboBox;
+    edtNomeMedicoAgendamento: TDBLookupComboBox;
   private
     { Private declarations }
   public
