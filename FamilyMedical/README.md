@@ -16,7 +16,7 @@ Este é um sistema desenvolvido em Delphi para gerenciar o cadastro de pacientes
 ## Instruções de Instalação
 1. Clone o repositório para o seu ambiente local.
 ```bash
-git clone https://github.com/seu-usuario/sistema-clinica-delphi.git
+git clone https://github.com/AykoSousa/DelphiApps/FamilyMedical.git
 ```
 2. Abra o projeto no Delphi RAD Studio.
 3. Compile o projeto para gerar o executável.
